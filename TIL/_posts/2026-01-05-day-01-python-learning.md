@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "format() vs f-strings"
+title: "Day 1 - Python Learning"
 categories: [til, python]
 ---
 
