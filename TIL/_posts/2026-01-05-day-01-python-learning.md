@@ -93,6 +93,14 @@ clean = [x.strip() for x in lst]
 print(clean)
 ```
 
+## Step[]
+when step = 2 then skips one element
+when step = -1 then flips the string
+
+
+
+
+
 ## Question
 Why does some parts of python starts with 0 and count up, but some parts it starts with 1
 - Zero-Based indexing
@@ -112,12 +120,21 @@ print(i, item)
 ```
 
 ## Important note
-When slicing last index does not get included
+- When slicing last index does not get included
 Example:
 ```python
 s= "forty"
 print(s[0:2])
 # fo
 ```
-
+- Printing outside the range will make an error if you are using index
+```python
+print(s[10]) 
+## error
+```
+- However, if you are using slicing it will not produce error.
+```python
+print(s[0:10])
+## abc
+```
 
