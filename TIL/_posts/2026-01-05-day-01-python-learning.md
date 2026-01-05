@@ -1,3 +1,9 @@
+---
+layout: post
+title: "format() vs f-strings"
+categories: [til, python]
+---
+
 # Day 1 — Python Learning  
 📅 2026-01-05
 
