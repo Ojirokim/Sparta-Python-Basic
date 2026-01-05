@@ -138,3 +138,29 @@ print(s[0:10])
 ## abc
 ```
 
+## Functions vs Methods in Python
+In Python, functions and methods are used differently.
+
+- Functions
+Written as function(value)
+Do not use a dot
+Work on many different types
+Examples:
+```python
+len("hello")
+int("123")
+print("hi")
+```
+- Methods
+Written as value.method()
+Always use a dot (.)
+Belong to a specific type (like strings)
+Examples:
+```python
+"hello".upper()
+"10,20".split(",")
+text.strip()
+```
+※ Easy rule to remember
+If behavior belongs to the object → method
+If behavior is generic → function
