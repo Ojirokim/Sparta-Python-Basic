@@ -36,7 +36,7 @@ At first, I thought iterable and iterator were the same thing, but they are not.
 - Can usually be reused
 
 Example:
-```
+```python
 nums = [1, 2, 3]
 for x in nums:
     print(x)
@@ -53,7 +53,7 @@ for x in nums:
 ## map()
 - map() returns a map object, which is an iterator, not a list.
 - How I proved map() is not a list
-```
+```python
 m = map(int, ["1", "2", "3"])
 print(list(m))  # [1, 2, 3]
 print(list(m))  # []
@@ -69,7 +69,7 @@ print(nums, "합:", sum(nums))
 ## format()
 - Put {} inside a string and fill it later using .format()
 Example:
-```
+```python
 name = "적토마"
 score = 95
 print("{}의 점수는 {}점입니다.".format(name, score))
@@ -87,9 +87,37 @@ print("{}의 점수는 {}점입니다.".format(name, score))
 - Splits the string and creates a list out of that.
 - Usually spit does not exclude spaces, thus you can use strip to delete that space
 Example:
-```
+```python
 lst = ["  apple  ", "  banana ", " cherry  "]
 clean = [x.strip() for x in lst]
 print(clean)
 ```
+
+## Question
+Why does some parts of python starts with 0 and count up, but some parts it starts with 1
+- Zero-Based indexing
+Used when referring to positions inside a sequence
+Strings , Lists, Tuples, Indexing & slicing
+
+- One-based counting
+Used when counting “things” or when humans expect natural counting
+range() when you choose it, enumerate(start=1)
+User-facing output (ranking, order, steps)
+Math / statistics concepts
+Example code:
+```
+items = ["apple", "banana", "cherry"]
+for i, item in enumerate(items, start=1):
+print(i, item)
+```
+
+## Important note
+When slicing last index does not get included
+Example:
+```python
+s= "forty"
+print(s[0:2])
+# fo
+```
+
 
