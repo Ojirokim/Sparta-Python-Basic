@@ -46,3 +46,19 @@ string.find("@")
 
 ## equal
 != means “not equal”; /= means “divide and assign” and is unrelated.
+
+
+## Errors="coerce" in pandas
+In pandas conversion functions (to_numeric, to_datetime, astype), errors="coerce" means:
+Force invalid values to NaN instead of raising an error.
+- "raise" (default): throw an error on bad values
+- "ignore": leave bad values unchanged
+- "coerce": convert bad values to NaN
+
+- The word coerce is used because pandas is forcing a type conversion even when data is lost.
+It’s a string (not a boolean) because there are more than two behaviors, and pandas wants explicit intent.
+
+```python
+pd.to_numeric(["1", "2", "apple"], errors="coerce")
+# → [1.0, 2.0, NaN]
+```
