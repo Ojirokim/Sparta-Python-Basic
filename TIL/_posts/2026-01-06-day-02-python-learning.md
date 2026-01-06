@@ -44,3 +44,5 @@ Python’s .find() searches for a substring in a string and returns the starting
 string.find("@")
 ```
 
+## equal
+!= means “not equal”; /= means “divide and assign” and is unrelated.
