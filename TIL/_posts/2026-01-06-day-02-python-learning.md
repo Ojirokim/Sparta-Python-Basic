@@ -32,5 +32,9 @@ All elements in the iterable must be strings, otherwise use:
 Think of join() as “use this string to glue things together.”
 
 
+## How end numbers act in range and slicing
+In Python, both range() and slicing are start-inclusive, end-exclusive.
+range(1, 10) goes from 1 to 9, and seq[1:4] includes index 1 but excludes index 4.
+This design avoids off-by-one errors and makes len(seq[:n]) == n.
 
 
