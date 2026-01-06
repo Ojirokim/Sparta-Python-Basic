@@ -4,7 +4,7 @@ title: "Day 2 - Python Learning"
 categories: [til, python]
 ---
 
-# Day 1 — Python Learning  
+# Day 2 — Python Learning  
 📅 2026-01-06
 
 Today is **Day 2 of my Python learning journey**.
