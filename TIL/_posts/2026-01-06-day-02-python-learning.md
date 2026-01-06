@@ -38,3 +38,9 @@ range(1, 10) goes from 1 to 9, and seq[1:4] includes index 1 but excludes index 
 This design avoids off-by-one errors and makes len(seq[:n]) == n.
 
 
+## find()
+Python’s .find() searches for a substring in a string and returns the starting index if found, or -1 if not found. It returns an integer (not True/False), so using it directly in if statements can be dangerous because 0 is False and -1 is True.
+```python
+string.find("@")
+```
+
