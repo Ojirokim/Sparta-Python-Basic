@@ -163,6 +163,37 @@ ROLLBACK TRANSACTION sp1;
 TOP can be used alone, but results may be unpredictable.
 WITH TIES must be used with ORDER BY.
 
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---
+
+---------------------
+
+----
+시험범위 아님
+
 ### SQL 실행계획 분석 명령어
 
 |                      | 실제 실행 | 결과 출력 | 실행계획 | 통계 |
