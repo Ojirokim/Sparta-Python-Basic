@@ -149,14 +149,15 @@ ROLLBACK TRANSACTION sp1;
 
 ### 순수 관계 연산자
 
-새로운 관계를 생성하는 연산   
-| 관계대수 연산자 | 의미                  | SQL 대응             |
-| ------- | -----------------         | --------------------- |
-| SELECT  | 조건을 만족하는 행 선택      | WHERE                   |
-| PROJECT | 특정 열 선택               | SELECT               |
-| JOIN    | 두 관계 결합               | JOIN                 |
-| DIVIDE  | 모든 조건을 만족하는 튜플 찾기| NOT EXISTS / GROUP BY |
-| RENAME  | 관계 또는 속성 이름 변경     | AS                     |
+새로운 관계를 생성하는 연산
+
+| 관계대수 연산자            | 의미        | SQL 대응                     |
+|---------------------|------------|-----------------------------|
+| SELECT          | 조건을 만족하는 행 선택    | WHERE    |
+| PROJECT       | 특정 열 선택 | SELECT    |
+| JOIN      | 두 관계 결합     | JOIN    |
+| DIVIDE | 모든 조건을 만족하는 튜플 찾기   | NOT EXISTS / GROUP BY |
+
 
 ### TOP, WITH TIES, ORDER BY (SQL Server)
 
